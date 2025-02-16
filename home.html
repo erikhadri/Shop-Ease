@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Ease</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Simulate hover effects on mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .hover\:scale-105:active {
+                transform: scale(1.05);
+            }
+            .hover\:bg-blue-600:active {
+                background-color: #2563eb;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-poppins bg-gray-100 min-h-screen flex justify-center items-center text-center">
+
+    <div class="bg-white p-12 rounded-xl shadow-xl w-full max-w-md">
+        <!-- Logo Container -->
+        <div class="flex justify-center items-center mb-6 bg-gradient-to-r from-sky-500 to-indigo-600 p-8 rounded-full shadow-lg transform transition-transform duration-500 hover:scale-105">
+            <img src="2.png" alt="Shop Ease Logo" class="w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 object-cover rounded-full">
+        </div>
+
+        <h1 class="text-5xl font-extrabold text-sky-700 mb-6">Shop Ease</h1>
+        <p class="text-lg font-semibold text-gray-700 mb-10">Your ultimate shopping app!</p>
+
+        <!-- Shop Ease Button -->
+        <button class="w-full py-3 text-xl font-extrabold text-white bg-sky-700 rounded-full hover:bg-blue-600 transition" onclick="window.location.href='index.html'">
+            Shop Ease
+        </button>
+    </div>
+
+</body>
+
+</html>
